@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-27T18:20:36.617490" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCase1" source="C:\Users\ycycr\OneDrive\Desktop\CHIRU PRACTISE\ROBOT FRAMEWORK\PROJRCT AUTOMATION\TestSuites\TestCase1.robot">
+<test id="s1-t1" name="Automation1" line="10">
+<kw name="Fill Form and Submit" owner="resource1">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-27T18:20:37.064528" level="INFO">Opening browser 'Chrome' to base url 'https://testpages.herokuapp.com/styled/basic-html-form-test.html'.</msg>
+<arg>https://testpages.herokuapp.com/styled/basic-html-form-test.html</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-27T18:20:37.064528" elapsed="6.011211"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T18:20:43.075739" elapsed="0.041890"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T18:20:43.120621" level="INFO">Typing text 'Y Chiranjeevi' into text field 'css:input[name="username"]'.</msg>
+<arg>css:input[name="username"]</arg>
+<arg>Y Chiranjeevi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T18:20:43.118625" elapsed="0.215424"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T18:20:43.335045" level="INFO">Typing text 'Ravi@123' into text field 'css:input[type="password"]'.</msg>
+<arg>css:input[type="password"]</arg>
+<arg>Ravi@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T18:20:43.334049" elapsed="0.174532"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>tag:textarea</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T18:20:43.509579" elapsed="0.056847"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T18:20:43.567423" level="INFO">Typing text 'This is about my automation testing online in the free testing source' into text field 'tag:textarea'.</msg>
+<arg>tag:textarea</arg>
+<arg>This is about my automation testing online in the free testing source</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T18:20:43.566426" elapsed="0.312166"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>css:input[name="filename"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-27T18:20:43.878592" elapsed="0.036901"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-05-27T18:20:43.915493" level="INFO">Sending C:\Users\ycycr\OneDrive\Desktop\CHIRU PRACTISE\ROBOT FRAMEWORK\PROJRCT AUTOMATION\Resources\ac.jpg to browser.</msg>
+<msg time="2024-05-27T18:20:44.037956" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-27T18:20:44.037956" level="FAIL">InvalidArgumentException: Message: invalid argument: File not found : C:\Users\ycycr\OneDrive\Desktop\CHIRU PRACTISE\ROBOT FRAMEWORK\PROJRCT AUTOMATION\Resources\ac.jpg
+  (Session info: chrome=125.0.6422.78)
+Stacktrace:
+	GetHandleVerifier [0x00007FF706A91F22+60322]
+	(No symbol) [0x00007FF706A0CE99]
+	(No symbol) [0x00007FF7068C7EBA]
+	(No symbol) [0x00007FF70691028B]
+	(No symbol) [0x00007FF70693C21A]
+	(No symbol) [0x00007FF70690ADB6]
+	(No symbol) [0x00007FF70693C430]
+	(No symbol) [0x00007FF70695BC80]
+	(No symbol) [0x00007FF70693BFC3]
+	(No symbol) [0x00007FF706909617]
+	(No symbol) [0x00007FF70690A211]
+	GetHandleVerifier [0x00007FF706DA946D+3301613]
+	GetHandleVerifier [0x00007FF706DF3693+3605267]
+	GetHandleVerifier [0x00007FF706DE9410+3563664]
+	GetHandleVerifier [0x00007FF706B442F6+790390]
+	(No symbol) [0x00007FF706A174DF]
+	(No symbol) [0x00007FF706A133D4]
+	(No symbol) [0x00007FF706A13562]
+	(No symbol) [0x00007FF706A02F6F]
+	BaseThreadInitThunk [0x00007FFEF6817344+20]
+	RtlUserThreadStart [0x00007FFEF87C26B1+33]
+</msg>
+<arg>css:input[name="filename"]</arg>
+<arg>C:\\Users\\ycycr\\OneDrive\\Desktop\\CHIRU PRACTISE\\ROBOT FRAMEWORK\\PROJRCT AUTOMATION\\Resources${/}ac.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="FAIL" start="2024-05-27T18:20:43.915493" elapsed="0.128448">InvalidArgumentException: Message: invalid argument: File not found : C:\Users\ycycr\OneDrive\Desktop\CHIRU PRACTISE\ROBOT FRAMEWORK\PROJRCT AUTOMATION\Resources\ac.jpg
+  (Session info: chrome=125.0.6422.78)
+Stacktrace:
+	GetHandleVerifier [0x00007FF706A91F22+60322]
+	(No symbol) [0x00007FF706A0CE99]
+	(No symbol) [0x00007FF7068C7EBA]
+	(No symbol) [0x00007FF70691028B]
+	(No symbol) [0x00007FF70693C21A]
+	(No symbol) [0x00007FF70690ADB6]
+	(No symbol) [0x00007FF70693C430]
+	(No symbol) [0x00007FF70695BC80]
+	(No symbol) [0x00007FF70693BFC3]
+	(No symbol) [0x00007FF706909617]
+	(No symbol) [0x00007FF70690A211]
+	GetHandleVerifier [0x00007FF706DA946D+3301613]
+	GetHandleVerifier [0x00007FF706DF3693+3605267]
+	GetHandleVerifier [0x00007FF706DE9410+3563664]
+	GetHandleVerifier [0x00007FF706B442F6+790390]
+	(No symbol) [0x00007FF706A174DF]
+	(No symbol) [0x00007FF706A133D4]
+	(No symbol) [0x00007FF706A13562]
+	(No symbol) [0x00007FF706A02F6F]
+	BaseThreadInitThunk [0x00007FFEF6817344+20]
+	RtlUserThreadStart [0x00007FFEF87C26B1+33]
+</status>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(0,800)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-05-27T18:20:44.044938" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:input[value="cb1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-27T18:20:44.044938" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:input[value="rd3"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-27T18:20:44.045935" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="HTMLFormElements"]/table/tbody/tr[7]/td/select</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2024-05-27T18:20:44.045935" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="HTMLFormElements"]/table/tbody/tr[7]/td/select</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2024-05-27T18:20:44.045935" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="HTMLFormElements"]/table/tbody/tr[8]/td/select</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2024-05-27T18:20:44.046932" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//input[@value="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-27T18:20:44.046932" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-27T18:20:44.046932" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-05-27T18:20:44.046932" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-27T18:20:37.063533" elapsed="6.983399">InvalidArgumentException: Message: invalid argument: File not found : C:\Users\ycycr\OneDrive\Desktop\CHIRU PRACTISE\ROBOT FRAMEWORK\PROJRCT AUTOMATION\Resources\ac.jpg
+  (Session info: chrome=125.0.6422.78)
+Stacktrace:
+	GetHandleVerifier [0x00007FF706A91F22+60322]
+	(No symbol) [0x00007FF706A0CE99]
+	(No symbol) [0x00007FF7068C7EBA]
+	(No symbol) [0x00007FF70691028B]
+	(No symbol) [0x00007FF70693C21A]
+	(No symbol) [0x00007FF70690ADB6]
+	(No symbol) [0x00007FF70693C430]
+	(No symbol) [0x00007FF70695BC80]
+	(No symbol) [0x00007FF70693BFC3]
+	(No symbol) [0x00007FF706909617]
+	(No symbol) [0x00007FF70690A211]
+	GetHandleVerifier [0x00007FF706DA946D+3301613]
+	GetHandleVerifier [0x00007FF706DF3693+3605267]
+	GetHandleVerifier [0x00007FF706DE9410+3563664]
+	GetHandleVerifier [0x00007FF706B442F6+790390]
+	(No symbol) [0x00007FF706A174DF]
+	(No symbol) [0x00007FF706A133D4]
+	(No symbol) [0x00007FF706A13562]
+	(No symbol) [0x00007FF706A02F6F]
+	BaseThreadInitThunk [0x00007FFEF6817344+20]
+	RtlUserThreadStart [0x00007FFEF87C26B1+33]
+</status>
+</kw>
+<status status="FAIL" start="2024-05-27T18:20:37.062500" elapsed="6.985479">InvalidArgumentException: Message: invalid argument: File not found : C:\Users\ycycr\OneDrive\Desktop\CHIRU PRACTISE\ROBOT FRAMEWORK\PROJRCT AUTOMATION\Resources\ac.jpg
+  (Session info: chrome=125.0.6422.78)
+Stacktrace:
+	GetHandleVerifier [0x00007FF706A91F22+60322]
+	(No symbol) [0x00007FF706A0CE99]
+	(No symbol) [0x00007FF7068C7EBA]
+	(No symbol) [0x00007FF70691028B]
+	(No symbol) [0x00007FF70693C21A]
+	(No symbol) [0x00007FF70690ADB6]
+	(No symbol) [0x00007FF70693C430]
+	(No symbol) [0x00007FF70695BC80]
+	(No symbol) [0x00007FF70693BFC3]
+	(No symbol) [0x00007FF706909617]
+	(No symbol) [0x00007FF70690A211]
+	GetHandleVerifier [0x00007FF706DA946D+3301613]
+	GetHandleVerifier [0x00007FF706DF3693+3605267]
+	GetHandleVerifier [0x00007FF706DE9410+3563664]
+	GetHandleVerifier [0x00007FF706B442F6+790390]
+	(No symbol) [0x00007FF706A174DF]
+	(No symbol) [0x00007FF706A133D4]
+	(No symbol) [0x00007FF706A13562]
+	(No symbol) [0x00007FF706A02F6F]
+	BaseThreadInitThunk [0x00007FFEF6817344+20]
+	RtlUserThreadStart [0x00007FFEF87C26B1+33]
+</status>
+</test>
+<status status="FAIL" start="2024-05-27T18:20:36.620480" elapsed="7.431501"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCase1">TestCase1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-27T18:20:37.052560" level="ERROR">Error in file 'C:\Users\ycycr\OneDrive\Desktop\CHIRU PRACTISE\ROBOT FRAMEWORK\PROJRCT AUTOMATION\TestSuites\TestCase1.robot' on line 4: Importing library 'C:\Users\ycycr\OneDrive\Desktop\CHIRU PRACTISE\ROBOT FRAMEWORK\PROJRCT AUTOMATION\Libraries\Lib1.py' failed: IndentationError: expected an indented block after function definition on line 12 (Lib1.py, line 13)
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\ycycr\OneDrive\Desktop\CHIRU PRACTISE\ROBOT FRAMEWORK\PROJRCT AUTOMATION\Libraries
+  C:\Users\ycycr\AppData\Local\Programs\Python\Python312\Scripts\robot.exe
+  C:\Users\ycycr\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\ycycr\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\ycycr\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\ycycr\AppData\Local\Programs\Python\Python312
+  C:\Users\ycycr\AppData\Roaming\Python\Python312\site-packages
+  C:\Users\ycycr\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+</errors>
+</robot>
